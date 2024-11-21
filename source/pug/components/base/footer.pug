@@ -1,0 +1,19 @@
+mixin footer(footerMods)
+  footer.footer(class=footerMods)
+    .container
+      .footer__wrapper
+        .footer__logo
+          +logo()
+        .footer__nav
+          ul.footer__nav-list
+            li.footer__nav-item
+              a.footer__nav-link(href="#") О нас
+            li.footer__nav-item
+              a.footer__nav-link(href="#") Галерея
+            li.footer__nav-item
+              a.footer__nav-link(href="#") Новости
+            li.footer__nav-item
+              a.footer__nav-link(href="#") Контакты
+        .footer__copyright
+          a.footer__coopyright-link(href="#", target="_blank") ООО “Организация”
+          p.footer__coopyright-text 2020. Все права защищены

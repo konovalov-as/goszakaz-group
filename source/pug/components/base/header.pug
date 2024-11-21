@@ -1,0 +1,49 @@
+mixin header(headerMods, currentUrl)
+  -
+    const headerLinks = [
+      {
+        href: "index.html",
+        text: "Главная"
+      },
+      {
+        href: "#",
+        text: "О нас"
+      },
+      {
+        href: "#",
+        text: "Контакты"
+      },
+      {
+        href: "#",
+        text: "Поиск"
+      },
+    ]
+
+  header.header(class=headerMods)
+    .container
+      .header__wrapper
+        if(currentUrl === "index.html")
+          //- lighthouse снимает 10 баллов SEO за <a> без href
+          span.header__logo
+            +logo()
+        else
+          a.header__logo(href="index.html", aria-label="Переход на главную")
+            +logo()
+
+        button.header__toggle(type="button", aria-label="Переключатель отображения меню", aria-pressed="false", data-nav-toggle)
+          +icon("icon-menu-open", 20, 20).header__toggle.header__toggle--open
+          +icon("icon-menu-close", 20, 20).header__toggle.header__toggle--close
+
+        nav.header__nav.main-nav(data-main-nav)
+          .main-nav__wrapper
+            ul.main-nav__list
+              each link in headerLinks
+                - const activeState = currentUrl === link.href
+                li.main-nav__item
+                  if(activeState)
+                    span.main-nav__link.is-active= link.text
+                  else
+                    a.main-nav__link(href=link.href)= link.text
+            a.header__contact(href="tel:+798788787", aria-label="Связаться с нами")
+              +icon("icon-phone", 14, 14)
+              | +7 (987) 887-87

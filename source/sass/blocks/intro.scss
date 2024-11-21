@@ -1,0 +1,12 @@
+.intro {
+  &__wrapper {
+    margin-bottom: 40px;
+  }
+
+  &__picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 300px;
+  }
+}

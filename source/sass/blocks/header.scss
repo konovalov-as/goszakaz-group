@@ -1,0 +1,147 @@
+.header {
+  position: relative;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px 0;
+  }
+
+  &__logo {
+    display: block;
+    // color: $color-default-white;
+    width: 50px;
+    height: 48px;
+  }
+
+  a.header__logo {
+    transition: opacity $trans-default;
+
+    &:hover,
+    &:focus {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+  }
+
+  &__toggle {
+    display: none;
+
+    @include vp-767 {
+      display: block;
+      position: relative;
+      border: none;
+      background-color: $color-transparent;
+      padding: 0;
+      cursor: pointer;
+      width: 20px;
+      height: 20px;
+      overflow: hidden;
+
+      &.is-active {
+        & .header__toggle--open {
+          opacity: 0;
+          transform: rotate(90deg);
+        }
+
+        & .header__toggle--close {
+          opacity: 1;
+          transform: rotate(90deg);
+        }
+      }
+
+      &--open {
+        display: grid;
+        place-items: center;
+        position: absolute;
+        inset: 0;
+        transition: opacity $tf-default, transform $trans-600, fill $trans-default;
+      }
+
+      &--close {
+        display: grid;
+        place-items: center;
+        position: absolute;
+        inset: 0;
+        transition: opacity $tf-default, transform $trans-600, fill $trans-default;
+        opacity: 0;
+      }
+    }
+
+    & svg {
+      fill: $color-royal-blue;
+    }
+
+    &:hover,
+    &:focus {
+      & svg {
+        fill: $color-cornflower-blue;
+      }
+    }
+
+    &:active {
+      & svg {
+        fill: rgba($color-nero, 40%);
+      }
+    }
+  }
+
+  &__nav {
+    @include vp-767 {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 100%;
+      padding-top: 0;
+      visibility: hidden;
+      transform: translateX(-150%);
+      transition: visibility $trans-600, transform $trans-600;
+      z-index: 2;
+      background-color: $color-default-white;
+    }
+  }
+
+  &__contact {
+    display: flex;
+    align-items: center;
+    font-weight: 450;
+    color: $color-royal-blue;
+    transition: color $trans-default;
+
+    &:hover,
+    &:focus {
+      color: $color-cornflower-blue;
+
+      & svg {
+        stroke: $color-cornflower-blue;
+        fill: $color-cornflower-blue;
+      }
+    }
+
+    &:active {
+      color: rgba($color-nero, 40%);
+
+      & svg {
+        stroke: rgba($color-nero, 40%);
+        fill: rgba($color-nero, 40%);
+      }
+    }
+
+    & svg {
+      transition: fill $trans-default, stroke $trans-default;
+      stroke: $color-royal-blue;
+      fill: $color-royal-blue;
+      width: 14px;
+      height: 14px;
+      margin-right: 10px;
+    }
+
+    @include vp-767 {
+      padding: 15px 20px;
+    }
+  }
+}

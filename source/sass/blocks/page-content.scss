@@ -1,0 +1,13 @@
+.page-content {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 37px;
+
+  @include vp-1279 {
+    gap: 15px;
+  }
+
+  @include vp-1023 {
+    display: block;
+  }
+}

@@ -1,0 +1,71 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__list {
+    list-style: none;
+    margin: 0;
+    margin-right: 20px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__item {
+    padding: 3px 10px;
+  }
+
+  &__page-btn {
+    background-color: transparent;
+    padding: 0;
+    border: none;
+    border-bottom: 1px solid transparent;
+    font-size: 18px;
+    line-height: 23px;
+    cursor: pointer;
+    transition: color $trans-default, border-bottom-color $trans-default;
+
+    &:hover,
+    &:focus {
+      color: $color-royal-blue;
+    }
+
+    &:active {
+      color: rgba($color-nero, 40%);
+    }
+
+    &.is-active {
+      color: $color-royal-blue;
+      border-bottom-color: $color-royal-blue;
+    }
+  }
+
+  &__next-btn {
+    background-color: rgba($color-royal-blue, 5%);
+    padding: 10px 16px;
+    border: none;
+    font-size: 18px;
+    line-height: 23px;
+    color: $color-royal-blue;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color $trans-default;
+
+    & svg {
+      width: 6px;
+      height: 10px;
+      fill: $color-royal-blue;
+      margin-left: 4px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: rgba($color-royal-blue, 15%);
+    }
+
+    &:active {
+      background-color: rgba($color-royal-blue, 20%);
+    }
+  }
+}

@@ -1,0 +1,14 @@
+mixin subscribe()
+  section.subscribe
+    .card
+      h2.title-h3.subscribe__title Подписка на рассылку
+      .subscribe__form(data-form-validate, data-callback="base")
+        form(method="post", action="#")
+          +custom-input({
+            inputType: "email",
+            inputName: "email",
+            inputId: "email",
+            inputPlaceholder: "Email@gmail.com",
+          }).subscribe__field
+          button.subscribe__btn(type="submit") Подписаться
+            +icon("icon-send", 20, 20)

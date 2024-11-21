@@ -1,0 +1,12 @@
+mixin intro()
+  section.intro
+    .intro__wrapper
+      h1.visually-hidden Рады приветствовать в Goszakaz Group
+      .intro__picture
+        picture
+          source(type="image/webp", media=`(max-width: ${vp1024})`, srcset="img/content/intro-tablet@1x.webp 1x, img/content/intro-tablet@2x.webp 2x")
+          source(type="image/webp", media=`(max-width: ${vp768})`, srcset="img/content/intro-mobile@1x.webp 1x, img/content/intro-mobile@2x.webp 2x")
+          source(type="image/webp", srcset="img/content/intro-desktop@1x.webp 1x, img/content/intro-desktop@2x.webp 2x")
+          source(media=`(max-width: ${vp1024})`, srcset="img/content/intro-tablet@1x.jpg 1x, img/content/intro-tablet@2x.jpg 2x")
+          source(media=`(max-width: ${vp768})`, srcset="img/content/intro-mobilep@1x.jpg 1x, img/content/intro-mobile@2x.jpg 2x")
+          img(src="img/content/intro-desktop@1x.jpg", srcset="img/content/intro-desktop@2x.jpg 2x", alt="Наша крутая команда", loading="lazy")

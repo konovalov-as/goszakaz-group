@@ -1,0 +1,92 @@
+mixin news()
+  section.news
+    h2.visually-hidden Проверенные новости
+    .news__wrapper
+      ul.news__list
+        li.news__item.news__item--type-1
+          .card
+            h3.card__title.title-h3 Управление ИТ-активами – скучная рутина или творческая задача?
+            p.card__text Размышляя об управлении ИТ-активами, я вспомнил один учебный пример.
+              | Менеджер по ИТ-мощностям в крупной компании периодически готовил толстенный отчёт руководству.
+              | В очередной раз он не принёс отчёт, решив проверить, нужен ли он вообще.
+            span.card__category Категория 1
+            span.card__date 13 дек 2020
+        li.news__item.news__item--type-2
+          .card
+            h3.card__title.title-h3 Управление ИТ-активами – скучная рутина или творческая задача?
+            p.card__text Размышляя об управлении ИТ-активами, я вспомнил один учебный пример.
+              | Менеджер по ИТ-мощностям в крупной компании периодически готовил толстенный отчёт руководству.
+              | В очередной раз он не принёс отчёт, решив проверить, нужен ли он вообще.
+            span.card__category Категория 1
+            span.card__date 13 дек 2020
+        li.news__item.news__item--type-3
+          .card.card--color
+            h3.card__title.title-h3 ITAM&SAMDay – самая настоящая удача!
+            span.card__category Категория 1
+            span.card__date 13 дек 2020
+        li.news__item.news__item--type-4
+          .card.card--bg
+            h3.card__title.title-h3 Управление ИТ-активами – скучная рутина или творческая задача?
+            span.card__category Очень длинная категория 2
+            span.card__date 13 дек 2020
+            .card__picture
+              picture
+                source(type="image/webp", srcset="img/content/card-bg-1@1x.webp 1x, img/content/card-bg-1@2x.webp 2x")
+                img(src="img/content/card-bg-1@1x.jpg", srcset="img/content/card-bg-1@2x.jpg 2x", alt="Диффузия абстракции оранжевого и сиреневого оттенков", loading="lazy")
+        li.news__item.news__item--type-5
+          .card
+            h3.card__title.title-h3 Управление ИТ-активами – скучная рутина или творческая задача слово слово и еще длинное слово после чего ...
+            span.card__category Категория 1
+            span.card__date 13 дек 2020
+        li.news__item.news__item--type-6
+          .card
+            h3.card__title.title-h3 ITAM&SAMDay – самая настоящая удача!
+            span.card__category Категория 1
+            span.card__date 13 дек 2020
+        li.news__item.news__item--type-7
+          .card
+            h3.card__title.title-h3 Управление ИТ-активами – скучная рутина или творческая задача?
+            p.card__text Размышляя об управлении ИТ-активами, я вспомнил один учебный пример.
+              | Менеджер по ИТ-мощностям в крупной компании периодически готовил толстенный отчёт руководству.
+              | В очередной раз он не принёс отчёт, решив проверить, нужен ли он вообще.
+            span.card__category Категория 1
+            span.card__date 13 дек 2020
+        li.news__item.news__item--type-8
+          .card.card--color
+            h3.card__title.title-h3 ITAM&SAMDay – самая настоящая удача!
+            span.card__category Категория 1
+            span.card__date 13 дек 2020
+        li.news__item.news__item--type-9
+          .card.card--bg
+            h3.card__title.title-h3 Управление ИТ-активами – скучная рутина или творческая задача?
+            span.card__category Очень длинная категория 2
+            span.card__date 13 дек 2020
+            .card__picture
+              picture
+                source(type="image/webp", srcset="img/content/card-bg-2@1x.webp 1x, img/content/card-bg-2@2x.webp 2x")
+                img(src="img/content/card-bg-2@1x.jpg", srcset="img/content/card-bg-2@2x.jpg 2x", alt="Вид на космос изнутри горы", loading="lazy")
+        li.news__item.news__item--type-10
+          .card
+            h3.card__title.title-h3 Управление ИТ-активами – скучная рутина или творческая задача?
+            span.card__category Категория 1
+            span.card__date 13 дек 2020
+        li.news__item.news__item--type-11
+          .card
+            h3.card__title.title-h3 ITAM&SAMDay – самая настоящая удача!
+            span.card__category Категория 1
+            span.card__date 13 дек 2020
+
+      .pagination
+        ul.pagination__list
+          li.pagination__item
+            button.pagination__page-btn.is-active(type="button", aria-label="Cтраница 1") 1
+          li.pagination__item
+            button.pagination__page-btn(type="button", aria-label="Cтраница 2") 2
+          li.pagination__item
+            button.pagination__page-btn(type="button", aria-label="Cтраница 3") 3
+          li.pagination__item
+            span ...
+          li.pagination__item
+            button.pagination__page-btn(type="button", aria-label="Cтраница 10") 10
+        button.pagination__next-btn(type="button") Следуюшая
+          +icon("icon-right-arrow", 10, 6)

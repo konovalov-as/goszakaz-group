@@ -1,0 +1,84 @@
+.subscribe {
+  &__title {
+    margin-bottom: 30px;
+
+    @include vp-1023 {
+      width: 100%;
+    }
+  }
+
+  &__form {
+    @include vp-1023 {
+      width: 100%;
+    }
+
+    & form {
+      @include vp-1023 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+      }
+
+      @include vp-767 {
+        display: block;
+      }
+    }
+  }
+
+  &__field {
+    margin-bottom: 21px;
+
+    @include vp-1023 {
+      width: 60%;
+      margin-bottom: 0;
+      margin-right: 20px;
+    }
+
+    @include vp-767 {
+      margin-right: 0;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: $color-royal-blue;
+    border: none;
+    border-radius: 20px;
+    font-size: 18px;
+    line-height: 23px;
+    color: $color-default-white;
+    padding: 13px 20px;
+    cursor: pointer;
+    transition: background-color $trans-default, opacity $trans-default;
+
+    & svg {
+      margin-left: 10px;
+      width: 20px;
+      height: 19px;
+      fill: $color-default-white;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: $color-cornflower-blue;
+    }
+
+    &:active {
+      opacity: 90%;
+    }
+
+    @include vp-1023 {
+      width: 40%;
+    }
+
+    @include vp-767 {
+      width: 100%;
+    }
+  }
+}

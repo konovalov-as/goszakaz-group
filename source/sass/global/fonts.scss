@@ -1,0 +1,27 @@
+// @font-face {
+//   font-style: normal;
+//   font-weight: 400;
+//   font-family: "Rouble";
+
+//   font-display: swap;
+//   src:
+//     url("../fonts/rouble.woff2") format("woff2");
+// }
+
+@font-face {
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Futura PT";
+
+  font-display: swap;
+  src: url("../fonts/FuturaPT-Book.woff2") format("woff2");
+}
+
+@font-face {
+  font-style: normal;
+  font-weight: 450;
+  font-family: "Futura PT";
+
+  font-display: swap;
+  src: url("../fonts/FuturaPT-BookObl.woff2") format("woff2");
+}
