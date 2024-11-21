@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Goszakaz Group</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="ProjectName — описание">
+    <link rel="stylesheet" href="css/style.min.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__wrapper"><span class="header__logo">
+              <picture><img src="img/svg/logo.svg" alt="Изюминка организации"></picture></span>
+            <button class="header__toggle" type="button" aria-label="Переключатель отображения меню" aria-pressed="false" data-nav-toggle>
+              <svg class="header__toggle header__toggle--open" width="20" height="20" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-menu-open"></use>
+              </svg>
+              <svg class="header__toggle header__toggle--close" width="20" height="20" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#icon-menu-close"></use>
+              </svg>
+            </button>
+            <nav class="header__nav main-nav" data-main-nav>
+              <div class="main-nav__wrapper">
+                <ul class="main-nav__list">
+                  <li class="main-nav__item"><span class="main-nav__link is-active">Главная</span>
+                  </li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="#">О нас</a>
+                  </li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="#">Контакты</a>
+                  </li>
+                  <li class="main-nav__item"><a class="main-nav__link" href="#">Поиск</a>
+                  </li>
+                </ul><a class="header__contact" href="tel:+798788787" aria-label="Связаться с нами">
+                  <svg width="14" height="14" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-phone"></use>
+                  </svg>+7 (987) 887-87</a>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="intro">
+          <div class="intro__wrapper">
+            <h1 class="visually-hidden">Рады приветствовать в Goszakaz Group</h1>
+            <div class="intro__picture">
+              <picture>
+                <source type="image/webp" media="(max-width: 1024px)" srcset="img/content/intro-tablet@1x.webp 1x, img/content/intro-tablet@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 768px)" srcset="img/content/intro-mobile@1x.webp 1x, img/content/intro-mobile@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/intro-desktop@1x.webp 1x, img/content/intro-desktop@2x.webp 2x">
+                <source media="(max-width: 1024px)" srcset="img/content/intro-tablet@1x.jpg 1x, img/content/intro-tablet@2x.jpg 2x">
+                <source media="(max-width: 768px)" srcset="img/content/intro-mobilep@1x.jpg 1x, img/content/intro-mobile@2x.jpg 2x"><img src="img/content/intro-desktop@1x.jpg" srcset="img/content/intro-desktop@2x.jpg 2x" alt="Наша крутая команда" loading="lazy">
+              </picture>
+            </div>
+          </div>
+        </section>
+        <div class="container">
+          <div class="page-content">
+            <section class="news">
+              <h2 class="visually-hidden">Проверенные новости</h2>
+              <div class="news__wrapper">
+                <ul class="news__list">
+                  <li class="news__item news__item--type-1">
+                    <div class="card">
+                      <h3 class="card__title title-h3">Управление ИТ-активами – скучная рутина или творческая задача?</h3>
+                      <p class="card__text">
+                        Размышляя об управлении ИТ-активами, я вспомнил один учебный пример.Менеджер по ИТ-мощностям в крупной компании периодически готовил толстенный отчёт руководству.
+                        В очередной раз он не принёс отчёт, решив проверить, нужен ли он вообще.
+                      </p><span class="card__category">Категория 1</span><span class="card__date">13 дек 2020</span>
+                    </div>
+                  </li>
+                  <li class="news__item news__item--type-2">
+                    <div class="card">
+                      <h3 class="card__title title-h3">Управление ИТ-активами – скучная рутина или творческая задача?</h3>
+                      <p class="card__text">
+                        Размышляя об управлении ИТ-активами, я вспомнил один учебный пример.Менеджер по ИТ-мощностям в крупной компании периодически готовил толстенный отчёт руководству.
+                        В очередной раз он не принёс отчёт, решив проверить, нужен ли он вообще.
+                      </p><span class="card__category">Категория 1</span><span class="card__date">13 дек 2020</span>
+                    </div>
+                  </li>
+                  <li class="news__item news__item--type-3">
+                    <div class="card card--color">
+                      <h3 class="card__title title-h3">ITAM&SAMDay – самая настоящая удача!</h3><span class="card__category">Категория 1</span><span class="card__date">13 дек 2020</span>
+                    </div>
+                  </li>
+                  <li class="news__item news__item--type-4">
+                    <div class="card card--bg">
+                      <h3 class="card__title title-h3">Управление ИТ-активами – скучная рутина или творческая задача?</h3><span class="card__category">Очень длинная категория 2</span><span class="card__date">13 дек 2020</span>
+                      <div class="card__picture">
+                        <picture>
+                          <source type="image/webp" srcset="img/content/card-bg-1@1x.webp 1x, img/content/card-bg-1@2x.webp 2x"><img src="img/content/card-bg-1@1x.jpg" srcset="img/content/card-bg-1@2x.jpg 2x" alt="Диффузия абстракции оранжевого и сиреневого оттенков" loading="lazy">
+                        </picture>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="news__item news__item--type-5">
+                    <div class="card">
+                      <h3 class="card__title title-h3">Управление ИТ-активами – скучная рутина или творческая задача слово слово и еще длинное слово после чего ...</h3><span class="card__category">Категория 1</span><span class="card__date">13 дек 2020</span>
+                    </div>
+                  </li>
+                  <li class="news__item news__item--type-6">
+                    <div class="card">
+                      <h3 class="card__title title-h3">ITAM&SAMDay – самая настоящая удача!</h3><span class="card__category">Категория 1</span><span class="card__date">13 дек 2020</span>
+                    </div>
+                  </li>
+                  <li class="news__item news__item--type-7">
+                    <div class="card">
+                      <h3 class="card__title title-h3">Управление ИТ-активами – скучная рутина или творческая задача?</h3>
+                      <p class="card__text">
+                        Размышляя об управлении ИТ-активами, я вспомнил один учебный пример.Менеджер по ИТ-мощностям в крупной компании периодически готовил толстенный отчёт руководству.
+                        В очередной раз он не принёс отчёт, решив проверить, нужен ли он вообще.
+                      </p><span class="card__category">Категория 1</span><span class="card__date">13 дек 2020</span>
+                    </div>
+                  </li>
+                  <li class="news__item news__item--type-8">
+                    <div class="card card--color">
+                      <h3 class="card__title title-h3">ITAM&SAMDay – самая настоящая удача!</h3><span class="card__category">Категория 1</span><span class="card__date">13 дек 2020</span>
+                    </div>
+                  </li>
+                  <li class="news__item news__item--type-9">
+                    <div class="card card--bg">
+                      <h3 class="card__title title-h3">Управление ИТ-активами – скучная рутина или творческая задача?</h3><span class="card__category">Очень длинная категория 2</span><span class="card__date">13 дек 2020</span>
+                      <div class="card__picture">
+                        <picture>
+                          <source type="image/webp" srcset="img/content/card-bg-2@1x.webp 1x, img/content/card-bg-2@2x.webp 2x"><img src="img/content/card-bg-2@1x.jpg" srcset="img/content/card-bg-2@2x.jpg 2x" alt="Вид на космос изнутри горы" loading="lazy">
+                        </picture>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="news__item news__item--type-10">
+                    <div class="card">
+                      <h3 class="card__title title-h3">Управление ИТ-активами – скучная рутина или творческая задача?</h3><span class="card__category">Категория 1</span><span class="card__date">13 дек 2020</span>
+                    </div>
+                  </li>
+                  <li class="news__item news__item--type-11">
+                    <div class="card">
+                      <h3 class="card__title title-h3">ITAM&SAMDay – самая настоящая удача!</h3><span class="card__category">Категория 1</span><span class="card__date">13 дек 2020</span>
+                    </div>
+                  </li>
+                </ul>
+                <div class="pagination">
+                  <ul class="pagination__list">
+                    <li class="pagination__item">
+                      <button class="pagination__page-btn is-active" type="button" aria-label="Cтраница 1">1</button>
+                    </li>
+                    <li class="pagination__item">
+                      <button class="pagination__page-btn" type="button" aria-label="Cтраница 2">2</button>
+                    </li>
+                    <li class="pagination__item">
+                      <button class="pagination__page-btn" type="button" aria-label="Cтраница 3">3</button>
+                    </li>
+                    <li class="pagination__item"><span>...</span></li>
+                    <li class="pagination__item">
+                      <button class="pagination__page-btn" type="button" aria-label="Cтраница 10">10</button>
+                    </li>
+                  </ul>
+                  <button class="pagination__next-btn" type="button">Следуюшая
+                    <svg width="10" height="6" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-right-arrow"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </section>
+            <aside class="aside aside--mb">
+              <section class="top-news">
+                <h2 class="title-h3 top-news__title">Популярные новости</h2>
+                <ul class="top-news__list">
+                  <li class="top-news__item"><a class="top-news__link" href="#">ITAM&SAMDay – самая настоящая удача!</a><span class="top-news__date">13 дек 2020</span></li>
+                  <li class="top-news__item"><a class="top-news__link" href="#">Секреты лицензирования. Всё, что вы хотели знать про Microsoft, SAP и Oracle, но не знали, у кого спросить ...</a><span class="top-news__date">13 дек 2020</span></li>
+                  <li class="top-news__item"><a class="top-news__link" href="#">Менеджмент XXI века. Надо ли готовиться к изменениям или мы давно уже должны были измениться?</a><span class="top-news__date">13 дек 2020</span></li>
+                </ul>
+              </section>
+              <section class="subscribe">
+                <div class="card">
+                  <h2 class="title-h3 subscribe__title">Подписка на рассылку</h2>
+                  <div class="subscribe__form" data-form-validate data-callback="base">
+                    <form method="post" action="#">
+                      <div class="custom-input subscribe__field">
+                        <label>
+                          <input type="email" id="email" name="email" placeholder="Email@gmail.com">
+                        </label>
+                      </div>
+                      <button class="subscribe__btn" type="submit">Подписаться
+                        <svg width="20" height="20" aria-hidden="true">
+                          <use xlink:href="img/sprite.svg#icon-send"></use>
+                        </svg>
+                      </button>
+                    </form>
+                  </div>
+                </div>
+              </section>
+            </aside>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__wrapper">
+            <div class="footer__logo">
+              <picture><img src="img/svg/logo.svg" alt="Изюминка организации"></picture>
+            </div>
+            <div class="footer__nav">
+              <ul class="footer__nav-list">
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#">О нас</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Галерея</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Новости</a></li>
+                <li class="footer__nav-item"><a class="footer__nav-link" href="#">Контакты</a></li>
+              </ul>
+            </div>
+            <div class="footer__copyright"><a class="footer__coopyright-link" href="#" target="_blank">ООО “Организация”</a>
+              <p class="footer__coopyright-text">2020. Все права защищены</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="js/vendor.min.js"></script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
